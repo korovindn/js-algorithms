@@ -2,5 +2,5 @@
   "compilerOptions": {
     "target": "es2016",
   },
-  "include": ["array_search.ts", "array_sort.ts", "graphs.ts"]
+  "include": ["array_search.ts", "array_sort.ts", "graphs.ts", "trees.ts"]
 }
