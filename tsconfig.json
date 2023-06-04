@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+  },
+  "include": ["array_search.ts", "array_sort.ts"]
+}
