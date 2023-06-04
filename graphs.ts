@@ -113,7 +113,7 @@ const dijkstra = (
     processed.push(edge);
     edge = lowestCost(costs, processed).edge;
   }
-  return costs
+  return costs[end]
 };
 
 console.log(dijkstra(weightedGraph, "a", "g"));
