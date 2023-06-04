@@ -90,7 +90,7 @@ const dijkstra = (
   graph: { [key: string]: { [key: string]: number } },
   start: string,
   end: string
-) => {
+): number => {
   const costs = Object.keys(graph).reduce(
     (costed, edge) =>
       edge !== start
