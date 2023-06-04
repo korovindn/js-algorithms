@@ -32,16 +32,17 @@ console.log(bfs(graph, 'g', 'a'))
 const dfs = (
   graph: { [key: string]: string[] },
   start: string,
-  end: string
+  end: string,
+  preVisited: string[] = []
 ): boolean => {
   if(start === end) return true
-	const visited = [start]
+	const visited = [...preVisited, start]
   if(!graph[start]) {
     graph[start] = []
   }
   for(let i = 0; i < graph[start].length; i++){
     if(!visited.includes(graph[start][i])) {
-      if (dfs(graph, graph[start][i], end)) return true
+      if (dfs(graph, graph[start][i], end, visited)) return true
     }
   }
   return false
